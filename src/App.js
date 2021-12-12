@@ -98,14 +98,14 @@ return(
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">ฝากบอกช่าง</span>
           </div>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+          <input type="text" class="form-control" placeholder="สิ่งที่อธิบายช่าง" aria-describedby="basic-addon1"/>
         </div>       
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">เบอร์โทรศัพท์</span>
+            <span class="input-group-text" id="basic-addon2">เบอร์โทรศัพท์</span>
           </div>
-          <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+          <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2"/>
         </div> 
 
         
