@@ -40,8 +40,8 @@ return(
       <div class="card-header">
         <div class="row">
           <div class="col-4"><img className="profile" src={pictureUrl} /></div>
-          <div class="col-8"><p>{displayName}</p>
-  <p>{email}</p></div>
+          <div class="col-8"><p><strong>{displayName}</strong></p>
+  <p><strong>{email}</strong></p></div>
         </div>
       </div>
       <div class="card-body">
