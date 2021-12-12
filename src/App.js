@@ -92,9 +92,24 @@ return(
             <option value="Headlight">ไฟหน้าและไฟเบรค</option>
           </select>
         </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">ฝากบอกช่าง</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+</div>       
 
 
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+
+        
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
       <div class="card-footer text-muted">
