@@ -78,9 +78,22 @@ return(
           <select class="custom-select" id="inputGroupSelect03" required>
             <option selected disabled value="">เลือก...</option>
             <option value="EngineOil">ถ่ายน้ำมันเครื่อง</option>
-            <option value="Suspension ">ซ่อมช่วงล่าง</option>
+            <option value="Suspension">ซ่อมช่วงล่าง</option>
           </select>
         </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect04">เสริมด้วยเรื่อง</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect04">
+            <option selected disabled value="">เลือก...</option>
+            <option value="Wheels">ตรวจล้อ</option>
+            <option value="Headlight">ไฟหน้าและไฟเบรค</option>
+          </select>
+        </div>
+
+
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
