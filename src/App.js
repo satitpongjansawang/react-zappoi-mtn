@@ -34,8 +34,6 @@ useEffect(() => {
 },  []);
 return(
   <div className="App">
-  
-  
     <div class="card ">
       <div class="card-header">
         <div class="row">
@@ -110,10 +108,7 @@ return(
 
         
         <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      <div class="card-footer text-muted">
-        2 days ago
-      </div>
+      </div> 
     </div>
   </div>
 );
