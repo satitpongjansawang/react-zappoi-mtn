@@ -36,7 +36,7 @@ return(
   <div className="App">
   
   
-    <div class="card text-center">
+    <div class="card ">
       <div class="card-header">
         <div class="row">
           <div class="col-4"><img className="profile" src={pictureUrl} /></div>
