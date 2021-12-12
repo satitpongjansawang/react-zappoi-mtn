@@ -60,7 +60,7 @@ return(
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">เลขกิโลเมตของรถ</label>
+            <label class="input-group-text" for="inputGroupSelect02">เลขกิโลเมตของรถ</label>
           </div>
           <select class="custom-select" id="inputGroupSelect02" required>
             <option selected disabled value="">เลือก...</option>
@@ -71,6 +71,16 @@ return(
           </select>
         </div>
 
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect03">รับบริการเรื่อง</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect03" required>
+            <option selected disabled value="">เลือก...</option>
+            <option value="EngineOil">ถ่ายน้ำมันเครื่อง</option>
+            <option value="Suspension ">ซ่อมช่วงล่าง</option>
+          </select>
+        </div>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
