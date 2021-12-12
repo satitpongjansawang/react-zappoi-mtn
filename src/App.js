@@ -45,7 +45,18 @@ return(
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>เลือก...</option>
+            <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
+            <option value="mazda2_45doors">Mazda 2 5 ประตู</option>
+            <option value="mazda3_4doors">Mazda 3 4 ประตู</option>
+            <option value="mazda3_5doors">Mazda 3 5 ประตู</option>
+          </select>
+        </div>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
