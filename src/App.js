@@ -92,23 +92,24 @@ return(
             <option value="Headlight">ไฟหน้าและไฟเบรค</option>
           </select>
         </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">ฝากบอกช่าง</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
+
 
         <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">@</span>
-  </div>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
-</div>       
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">ฝากบอกช่าง</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+        </div>       
 
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">ฝากบอกช่าง</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+        </div> 
 
-
-
+        <label for="phone">เบอร์โทรศัพท์</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
         
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
