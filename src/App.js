@@ -34,14 +34,14 @@ useEffect(() => {
 },  []);
 return(
   <div className="App">
-  <img className="profile" src={pictureUrl} />
-  <p>{displayName}</p>
-  <p>{email}</p>
+  
+  
     <div class="card text-center">
       <div class="card-header">
         <div class="row">
-          <div class="col-8">col-8</div>
-          <div class="col-4">col-4</div>
+          <div class="col-4"><img className="profile" src={pictureUrl} /></div>
+          <div class="col-8"><p>{displayName}</p>
+  <p>{email}</p></div>
         </div>
       </div>
       <div class="card-body">
