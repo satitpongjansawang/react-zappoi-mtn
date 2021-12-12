@@ -39,7 +39,10 @@ return(
   <p>{email}</p>
     <div class="card text-center">
       <div class="card-header">
-        Featured
+        <div class="row">
+          <div class="col-8">col-8</div>
+          <div class="col-4">col-4</div>
+        </div>
       </div>
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
