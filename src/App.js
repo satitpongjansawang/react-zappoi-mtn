@@ -49,14 +49,28 @@ return(
           <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>เลือก...</option>
+          <select class="custom-select" id="inputGroupSelect01" required>
+            <option selected disabled value="">เลือก...</option>
             <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
             <option value="mazda2_45doors">Mazda 2 5 ประตู</option>
             <option value="mazda3_4doors">Mazda 3 4 ประตู</option>
             <option value="mazda3_5doors">Mazda 3 5 ประตู</option>
           </select>
         </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">เลขกิโลเมตของรถ</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect02" required>
+            <option selected disabled value="">เลือก...</option>
+            <option value="10000">0-10000</option>
+            <option value="20000">10001-20000</option>
+            <option value="30000">20001-30000</option>
+            <option value="40000">30001-40000</option>
+          </select>
+        </div>
+
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
