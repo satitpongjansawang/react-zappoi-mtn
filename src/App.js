@@ -111,9 +111,7 @@ function App() {
           </div> 
 
           
-          <button type="button" class="btn btn-success" onClick={() => this.postData({
-            alert()
-          }) }>ส่งข้อมูล</button>
+          <button type="button" class="btn btn-success" >ส่งข้อมูล</button>
         </div> 
       </div>
     </div>
