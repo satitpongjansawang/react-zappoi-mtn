@@ -9,6 +9,7 @@ function App() {
   const [userId, setUserId] = useState('');
   const [email , setEmail] = useState('');
   const [notes, setNotes] = useState('');
+  const [phone, setPhone] = useState('');
 
 
   const initLine = () => {
@@ -106,7 +107,7 @@ function App() {
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon2">เบอร์โทรศัพท์</span>
             </div>
-            <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2"/>
+            <input type="tel" value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
           </div> 
 
           
