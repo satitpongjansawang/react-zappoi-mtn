@@ -54,9 +54,7 @@ function App() {
     } )
     //console.warn(phone , email , notes , userId);
   }
-  function handleChange(e) {
-    this.setState({value: e.target.value});
-  }
+
   return(
     <div className="App">
       <div class="card ">
