@@ -78,7 +78,7 @@ function App() {
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect02">เลขกิโลเมตของรถ</label>
+              <label class="input-group-text" for="inputGroupSelect02">เลขกิโลเมตรของรถ</label>
             </div>
             <select class="custom-select" id="inputGroupSelect02" required>
               <option selected disabled value="">เลือก...</option>
