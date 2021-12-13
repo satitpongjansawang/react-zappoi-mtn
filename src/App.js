@@ -47,9 +47,7 @@ function App() {
     fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
       method: "POST",
       body: JSON.stringify(data)
-    }).then(() => {
-        liff.closeWindow();
-    } )
+    }).then(liff.closeWindow())
     //console.warn(phone , email , notes , userId);
   }
 
