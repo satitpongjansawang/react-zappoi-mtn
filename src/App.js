@@ -35,7 +35,9 @@ function App() {
     initLine();
   },  []);
 
-
+  function postData(){
+    console.warn(phone);
+  }
   return(
     <div className="App">
       <div class="card ">
@@ -111,7 +113,7 @@ function App() {
           </div> 
 
           
-          <button type="button" class="btn btn-success" >ส่งข้อมูล</button>
+          <button type="button" class="btn btn-success" onClick={postData} >ส่งข้อมูล</button>
         </div> 
       </div>
     </div>
