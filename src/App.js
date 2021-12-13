@@ -42,7 +42,7 @@ function App() {
   },  []);
 
   function postData(){
-    let data = {phone , email , notes , userId}
+    let data = {phone , email , notes , userId , sel1 , sel2 , sel3 , sel4}
     fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
       method: "POST",
       body: JSON.stringify(data)
@@ -67,7 +67,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
             </div>
-            <h1>{sel1}</h1>
+            
             <select class="custom-select" id="inputGroupSelect01" required value={sel1} onChange={e=>setSel1(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
               <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
@@ -81,7 +81,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect02">เลขกิโลเมตรของรถ</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect02" required>
+            <select class="custom-select" id="inputGroupSelect02" required value={sel2} onChange={e=>setSel2(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
               <option value="10000">0-10000</option>
               <option value="20000">10001-20000</option>
@@ -94,7 +94,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect03">รับบริการเรื่อง</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect03" required>
+            <select class="custom-select" id="inputGroupSelect03" required value={sel3} onChange={e=>setSel3(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
               <option value="EngineOil">ถ่ายน้ำมันเครื่อง</option>
               <option value="Suspension">ซ่อมช่วงล่าง</option>
@@ -105,7 +105,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect04">เสริมด้วยเรื่อง</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect04">
+            <select class="custom-select" id="inputGroupSelect04" value={sel4} onChange={e=>setSel4(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
               <option value="Wheels">ตรวจล้อ</option>
               <option value="Headlight">ไฟหน้าและไฟเบรค</option>
