@@ -36,7 +36,7 @@ function App() {
   },  []);
 
   function postData(){
-    console.warn(phone);
+    console.warn(phone , email , notes , userId);
   }
   return(
     <div className="App">
