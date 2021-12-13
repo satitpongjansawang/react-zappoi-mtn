@@ -67,7 +67,8 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01" required>
+            <h1>{sel1}</h1>
+            <select class="custom-select" id="inputGroupSelect01" required value={sel1} onChange={e=>setSel1(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
               <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
               <option value="mazda2_45doors">Mazda 2 5 ประตู</option>
