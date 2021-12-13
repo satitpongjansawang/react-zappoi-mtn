@@ -36,6 +36,19 @@ function App() {
   },  []);
 
   function postData(){
+    let data = {phone , email , notes , userId}
+    fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    }).then((resp) => {
+      resp.json().then((result) => {
+        console.warm("result", result)
+      } )
+    } )
     console.warn(phone , email , notes , userId);
   }
   return(
