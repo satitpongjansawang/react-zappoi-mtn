@@ -8,6 +8,7 @@ function App() {
   const [displayName, setDisplayName] = useState('');
   const [userId, setUserId] = useState('');
   const [email , setEmail] = useState('');
+
   const [notes, setNotes] = useState('');
   const [phone, setPhone] = useState('');
 
@@ -129,6 +130,7 @@ function App() {
 
           
           <button type="button" class="btn btn-success" onClick={postData} >ส่งข้อมูล</button>
+          <button type="button" class="btn btn-warning" onClick={() => { liff.closeWindow() }} >ปิดหน้านี้</button> 
         </div> 
       </div>
     </div>
