@@ -128,7 +128,6 @@ function App() {
 
           
           <button type="button" class="btn btn-success" onClick={postData} >ส่งข้อมูล</button>
-          <button type="button" class="btn btn-warning" onClick={() => { liff.closeWindow() }} >ปิดหน้านี้</button> 
         </div> 
       </div>
     </div>
