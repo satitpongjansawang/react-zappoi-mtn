@@ -110,7 +110,7 @@ return(
 
         
         <button type="button" class="btn btn-success" onClick={() => this.postData({
-          alert();
+          alert()
         }) }>ส่งข้อมูล</button>
       </div> 
     </div>
