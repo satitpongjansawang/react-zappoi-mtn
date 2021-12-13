@@ -3,21 +3,20 @@ import "./style.css";
 import {useState , useEffect} from 'react';
 import liff from '@line/liff';
 
-function App() {
+function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
+  const [userId, setUserId] = useState('');
   const [pictureUrl, setPictureUrl] = useState('');
   const [displayName, setDisplayName] = useState('');
-  const [userId, setUserId] = useState('');
+  const [os, setOS] = useState('');
+  const [lang, setLang] = useState('');
   const [email , setEmail] = useState('');
-
-  const [notes, setNotes] = useState('');
   const [phone, setPhone] = useState('');
 
   const [sel1, setSel1] = useState('');
   const [sel2, setSel2] = useState('');
   const [sel3, setSel3] = useState('');
   const [sel4, setSel4] = useState('');
-
-
+  const [notes, setNotes] = useState('');
 
   const initLine = () => {
     liff.init({ liffId : "1655945045-NpP9E2aG"}, () => {
@@ -35,6 +34,8 @@ function App() {
       setPictureUrl(profile.pictureUrl);
       setUserId(profile.userId);
       setEmail(liff.getDecodedIDToken().email);
+      setOS(liff.getOS());
+      setLang(liff.getLanguage());
     }).catch(err => console.error(err));
   }
 
@@ -43,7 +44,7 @@ function App() {
   },  []);
 
   function postData(){
-    let data = {phone , email , notes , userId , sel1 , sel2 , sel3 , sel4}
+    let data = {userId , pictureUrl , displayName ,os , lang ,email , phone , sel1 , sel2 , sel3 , sel4, notes }
     fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
       method: "POST",
       body: JSON.stringify(data)
