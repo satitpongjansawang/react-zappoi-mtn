@@ -32,6 +32,8 @@ const runApp = () =>{
 useEffect(() => {
   initLine();
 },  []);
+
+
 return(
   <div className="App">
     <div class="card ">
@@ -107,7 +109,9 @@ return(
         </div> 
 
         
-        <button type="button" class="btn btn-success">ส่งข้อมูล</button>
+        <button type="button" class="btn btn-success" onClick={() => this.postData({
+          alert();
+        }) }>ส่งข้อมูล</button>
       </div> 
     </div>
   </div>
