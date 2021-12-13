@@ -11,6 +11,12 @@ function App() {
   const [notes, setNotes] = useState('');
   const [phone, setPhone] = useState('');
 
+  const [sel1, setSel1] = useState('');
+  const [sel2, setSel2] = useState('');
+  const [sel3, setSel3] = useState('');
+  const [sel4, setSel4] = useState('');
+  this.state = {value: 'coconut'};
+
 
   const initLine = () => {
     liff.init({ liffId : "1655945045-NpP9E2aG"}, () => {
@@ -48,6 +54,9 @@ function App() {
     } )
     //console.warn(phone , email , notes , userId);
   }
+  function handleChange(e) {
+    this.setState({value: e.target.value});
+  }
   return(
     <div className="App">
       <div class="card ">
@@ -63,7 +72,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01" required>
+            <select class="custom-select" id="inputGroupSelect01" required value={this.state.value} onChange={this.handleChange}>
               <option selected disabled value="">เลือก...</option>
               <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
               <option value="mazda2_45doors">Mazda 2 5 ประตู</option>
