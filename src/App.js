@@ -43,7 +43,8 @@ function App() {
       body: JSON.stringify(data)
     }).then((resp) => {
       resp.json().then((result) => {
-        console.warm("result", result)
+        //console.warm("result", result)
+        liff.closeWindow();
       } )
     } )
     //console.warn(phone , email , notes , userId);
