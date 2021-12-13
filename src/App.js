@@ -107,7 +107,7 @@ return(
         </div> 
 
         
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <button type="button" class="btn btn-success">ส่งข้อมูล</button>
       </div> 
     </div>
   </div>
