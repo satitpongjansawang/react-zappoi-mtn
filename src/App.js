@@ -15,7 +15,7 @@ function App() {
   const [sel2, setSel2] = useState('');
   const [sel3, setSel3] = useState('');
   const [sel4, setSel4] = useState('');
-  this.state = {value: 'coconut'};
+
 
 
   const initLine = () => {
@@ -45,12 +45,9 @@ function App() {
     let data = {phone , email , notes , userId}
     fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
       method: "POST",
-     
       body: JSON.stringify(data)
     }).then(() => {
-      
         liff.closeWindow();
-     
     } )
     //console.warn(phone , email , notes , userId);
   }
@@ -70,7 +67,7 @@ function App() {
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01" required value={this.state.value} onChange={this.handleChange}>
+            <select class="custom-select" id="inputGroupSelect01" required>
               <option selected disabled value="">เลือก...</option>
               <option value="mazda2_4doors">Mazda 2 4 ประตู</option>
               <option value="mazda2_45doors">Mazda 2 5 ประตู</option>
