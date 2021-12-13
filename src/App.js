@@ -41,7 +41,7 @@ function App() {
       method: "POST",
      
       body: JSON.stringify(data)
-    }).then((resp) => {
+    }).then(() => {
       
         liff.closeWindow();
      
