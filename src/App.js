@@ -45,7 +45,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
   },  []);
 
   function postData(){
-    let data = {userId , pictureUrl , displayName ,os , lang ,email , phone , sel1 , sel2 , sel3 , sel4, notes }
+    let data = {userId , pictureUrl , displayName ,os , lang ,email , phone , sel1 , sel2 , sel3 , sel4, notes , appoidate}
     fetch("https://script.google.com/macros/s/AKfycbyyTEHQ_uZhQQwFwy7k9mFkWkUWlJ7KQlbdvRf5mMDXpcnxtWci/exec",{
       method: "POST",
       body: JSON.stringify(data)
