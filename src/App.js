@@ -77,6 +77,13 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
               <option value="mazda3_5doors">Mazda 3 5 ประตู</option>
             </select>
           </div>
+          
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">วันที่สะดวกเข้า</span>
+            </div>
+            <input type="date" value= {appoidate} class="form-control" placeholder="yyyy-mm-dd" aria-describedby="basic-addon3" onChange={(e) =>{setAppoiDate(e.target.value)} }/>
+          </div> 
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -128,12 +135,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             <input type="tel" value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
           </div> 
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon3">วันที่สะดวกเข้า</span>
-            </div>
-            <input type="date" value= {appoidate} class="form-control" placeholder="yyyy-mm-dd" aria-describedby="basic-addon3" onChange={(e) =>{setAppoiDate(e.target.value)} }/>
-          </div> 
+
 
           <button type="button" class="btn btn-success" onClick={postData} >ส่งข้อมูล</button>
         </div> 
