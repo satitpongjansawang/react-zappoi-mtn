@@ -127,8 +127,13 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             </div>
             <select class="custom-select" id="inputGroupSelect03" required value={sel3} onChange={e=>setSel3(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
+              <option value="Maintenance">เช็ครถตามระยะ</option>
               <option value="EngineOil">ถ่ายน้ำมันเครื่อง</option>
-              <option value="Suspension">ซ่อมช่วงล่าง</option>
+              <option value="TransmissionOil">ถ่ายน้ำมันเกียร์และเฟืองท้าย</option>
+              <option value="Suspension">ซ่อมช่วงล่าง</option> 
+              <option value="Interior">ตรวจสอบภายนอกรถ</option> 
+              <option value="Exterior">ตรวจสอบภายในรถ</option>
+
             </select>
           </div>
 
@@ -155,7 +160,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon2">เบอร์โทรศัพท์</span>
             </div>
-            <input type="tel" value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
+            <input type="tel" required value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
           </div> 
 
 
