@@ -66,7 +66,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
         <div class="card-body">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect01">รุ่นรถยนต์ของท่าน</label>
+              <label class="input-group-text" for="inputGroupSelect01">*รุ่นรถยนต์ของท่าน</label>
             </div>
             
             <select class="custom-select" id="inputGroupSelect01" required value={sel1} onChange={e=>setSel1(e.target.value)}>
@@ -87,14 +87,14 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon3">วันที่สะดวกเข้า</span>
+              <span class="input-group-text" id="basic-addon3">*วันที่สะดวกเข้า</span>
             </div>
             <input type="date" value= {appoidate} class="form-control" placeholder="yyyy-mm-dd" aria-describedby="basic-addon3" onChange={(e) =>{setAppoiDate(e.target.value)} }/>
           </div> 
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect02">เลขกิโลเมตรของรถ</label>
+              <label class="input-group-text" for="inputGroupSelect02">*เลขกิโลเมตรของรถ</label>
             </div>
             <select class="custom-select" id="inputGroupSelect02" required value={sel2} onChange={e=>setSel2(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
@@ -123,7 +123,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <label class="input-group-text" for="inputGroupSelect03">รับบริการเรื่อง</label>
+              <label class="input-group-text" for="inputGroupSelect03">*รับบริการเรื่อง</label>
             </div>
             <select class="custom-select" id="inputGroupSelect03" required value={sel3} onChange={e=>setSel3(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
@@ -158,7 +158,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon2">เบอร์โทรศัพท์</span>
+              <span class="input-group-text" id="basic-addon2">*เบอร์โทรศัพท์</span>
             </div>
             <input type="tel" required value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
           </div> 
