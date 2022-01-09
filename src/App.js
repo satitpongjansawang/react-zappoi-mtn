@@ -90,7 +90,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
               <span class="input-group-text" id="basic-addon3">*วันที่สะดวกเข้า</span>
             </div>
             <input type="date" value= {appoidate} class="form-control" placeholder="yyyy-mm-dd" aria-describedby="basic-addon3" onChange={(e) =>{setAppoiDate(e.target.value)} }/>
-            <small style="color:red">กรุณากำหนดล่วงหน้า 2 วันเพื่อจัดลำดับรถเข้าตรวจสอบคะ</small>
+            <small><mark>กรุณากำหนดล่วงหน้า 2 วันเพื่อจัดลำดับรถเข้าตรวจสอบคะ</mark></small>
           </div> 
 
           <div class="input-group mb-3">
