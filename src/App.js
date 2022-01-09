@@ -24,7 +24,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
       if (liff.isLoggedIn() ){
         runApp();
       }else{
-        liff.login();
+        //liff.login();
       }
     }, err => console.error(err));
   }
