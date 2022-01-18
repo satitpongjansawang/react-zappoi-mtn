@@ -227,12 +227,12 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             </div>
             <select class="custom-select" id="inputGroupSelect03" required value={sel3} onChange={e=>setSel3(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
-              <option value="Maintenance">เช็ครถตามระยะ</option>
-              <option value="EngineOil">ถ่ายน้ำมันเครื่อง</option>
-              <option value="TransmissionOil">ถ่ายน้ำมันเกียร์และเฟืองท้าย</option>
-              <option value="Suspension">ซ่อมช่วงล่าง</option> 
-              <option value="Interior">ตรวจสอบภายนอกรถ</option> 
-              <option value="Exterior">ตรวจสอบภายในรถ</option>
+              <option value="เช็ครถตามระยะ">เช็ครถตามระยะ</option>
+              <option value="ถ่ายน้ำมันเครื่อง">ถ่ายน้ำมันเครื่อง</option>
+              <option value="ถ่ายน้ำมันเกียร์และเฟืองท้าย">ถ่ายน้ำมันเกียร์และเฟืองท้าย</option>
+              <option value="ซ่อมช่วงล่าง">ซ่อมช่วงล่าง</option> 
+              <option value="ตรวจสอบภายนอกรถ">ตรวจสอบภายนอกรถ</option> 
+              <option value="ตรวจสอบภายในรถ">ตรวจสอบภายในรถ</option>
 
             </select>
           </div>
@@ -243,8 +243,10 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             </div>
             <select class="custom-select" id="inputGroupSelect04" value={sel4} onChange={e=>setSel4(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
-              <option value="Wheels">ตรวจล้อ</option>
-              <option value="Headlight">ไฟหน้าและไฟเบรค</option>
+              <option value="ถ่ายน้ำมันเกียร์และเฟืองท้าย">ถ่ายน้ำมันเกียร์และเฟืองท้าย</option>
+              <option value="ตรวจล้อ">ตรวจล้อ</option>
+              <option value="ไฟหน้าและไฟเบรค">ไฟหน้าและไฟเบรค</option>
+              <option value="ใบปัดน้ำฝนหน้าและหลัง">ใบปัดน้ำฝนหน้าและหลัง</option>
             </select>
           </div>
 
