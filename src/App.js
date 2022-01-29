@@ -100,7 +100,9 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
             </div>
             <select class="custom-select" id="inputGroupSelect05" value={sel5} onChange={e=>setSel5(e.target.value)}>
               <option selected disabled value="">เลือก...</option>
+              <option value="ชลบุรี">ชลบุรี </option>
               <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+              <option disabled>──────────</option>
               <option value="กระบี่">กระบี่ </option>
               <option value="กาญจนบุรี">กาญจนบุรี </option>
               <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
@@ -111,7 +113,6 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
               <option value="ชัยนาท">ชัยนาท </option>
               <option value="ชัยภูมิ">ชัยภูมิ </option>
               <option value="ชุมพร">ชุมพร </option>
-              <option value="ชลบุรี">ชลบุรี </option>
               <option value="เชียงใหม่">เชียงใหม่ </option>
               <option value="เชียงราย">เชียงราย </option>
               <option value="ตรัง">ตรัง </option>
