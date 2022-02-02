@@ -264,6 +264,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
               <span class="input-group-text" id="basic-addon2">*เบอร์โทรศัพท์</span>
             </div>
             <input type="tel" required value= {phone} class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="0812345678" aria-describedby="basic-addon2" onChange={(e) =>{setPhone(e.target.value)} }/>
+            <small><mark>เบอร์โทรศัพท์ใช้ในการติดต่อกลับเพื่อยืนยันคะ</mark></small>
           </div> 
 
 
